@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portal - Chargebee</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="YourSiteName"></script>
+</head>
+<body>
+	<a  href="javascript:void(0)" data-cb-type="portal">
+        <button class="btn btn-border-primary btn-lg" id="open-popup" type="button">
+        </button>
+    </a>
+</body>
+</html>
+<script type='text/javascript'>
+	function clickToOpenPopup(){
+	  	$('#open-popup').trigger("click",function(event){
+	  });
+	}    
+    setTimeout(clickToOpenPopup, 3000)
+</script>
